@@ -75,7 +75,7 @@ const ConnectScreen = ({navigation}: Props) => {
             onPress={onTapConnectButton}
             accessibilityLabel={CONNECT_BUTTON}
           />
-          <QRCodeScanner onCodeScanned={onChangePeerToken} />
+          {/*<QRCodeScanner onCodeScanned={onChangePeerToken} />*/}
         </View>
       </SafeAreaView>
     </DismissKeyboard>

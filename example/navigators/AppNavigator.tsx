@@ -5,14 +5,16 @@ import ConnectWithTokenScreen from '../screens/ConnectWithTokenScreen';
 import ConnectWithRoomManagerScreen from '../screens/ConnectWithRoomManagerScreen';
 import RoomScreen from '../screens/RoomScreen';
 import React from 'react';
-import PreviewScreen from '../screens/PreviewScreen';
+import {PreviewScreen} from '../screens/PreviewScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import {AdditionalColors, BrandColors} from '../utils/Colors';
 
 export type AppRootStackParamList = {
   Home: undefined;
-  Preview: undefined;
+  Preview?: {
+    userName?: string;
+  };
   Room: undefined;
 };
 

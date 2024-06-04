@@ -71,7 +71,7 @@ const ConnectScreen = ({navigation}: Props) => {
 
       await connect(jellyfishUrl, token);
 
-      navigation.navigate('Preview');
+      navigation.navigate('Preview', {userName: userName});
     } catch (e) {
       const message =
         'message' in (e as Error) ? (e as Error).message : 'Unknown error';
